@@ -8,6 +8,8 @@ setup(
                     'git_date',
                 ],
         install_requires=[
+                    'parsedatetime',
+                    'GitPython',
                 ],
         entry_points = {
             'console_scripts': [
