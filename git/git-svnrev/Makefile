@@ -1,4 +1,4 @@
-PROJECT_NAME=$(shell basename ${PWD} )
+PROJECT_NAME=$(shell basename `pwd` )
 VIRTUALENV_NAME=.${PROJECT_NAME}
 
 ### DO NOT TOUCH ANYTHING BELOW THIS LINE ###
