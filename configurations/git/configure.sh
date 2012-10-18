@@ -14,6 +14,7 @@ git config --global alias.br "branch"
 git config --global alias.cl "clean -d -x -f"
 git config --global alias.sub "submodule"
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+git config --global alias.serve "daemon --reuseaddr --verbose --base-path=. --export-all ./.git"
 
 # Colors
 git config --global color.ui auto
@@ -23,3 +24,8 @@ git config --global diff.tool gvimdiff
 
 # Core
 git config --global core.excludesfile "${HOME}/.gitignore_global"
+
+# Instaweb
+git config --global instaweb.httpd webrick
+git config --global instaweb.port 4000
+git config --global instaweb.browser open
