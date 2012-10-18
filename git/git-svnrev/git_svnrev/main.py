@@ -51,7 +51,7 @@ def command_get(args):
 
             revision = extract_revision(commit.message)
 
-            if revision <= args.revision:
+            if not (revision is None) and (revision <= args.revision):
 
                 result = {
                     'commit': commit,
