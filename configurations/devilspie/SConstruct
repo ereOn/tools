@@ -4,4 +4,8 @@ home_dir = os.path.expanduser('~')
 
 env = Environment()
 
-env.Install(target=os.path.join(home_dir, '.devilspie'), source=Glob(os.path.join('.devilspie', '*.ds')))
+install = env.Install(target=os.path.join(home_dir, '.devilspie'), source=Glob(os.path.join('.devilspie', '*.ds')))
+
+env.Alias('install', install)
+
+env.Default('install')
