@@ -1,0 +1,10 @@
+; generated_rule thunderbird
+( if 
+( begin 
+( contains ( window_class ) "Thunderbird" )
+) 
+( begin 
+( set_viewport 2 )
+( println "match" )
+)
+)

@@ -1,0 +1,9 @@
+; generated_rule gvim
+( if 
+( begin 
+( is ( application_name ) "Vim" )
+) 
+( begin 
+( maximize )
+)
+)
