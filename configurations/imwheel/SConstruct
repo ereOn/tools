@@ -1,0 +1,7 @@
+import os
+
+home_dir = os.path.expanduser('~')
+
+env = Environment()
+
+env.Install(target=home_dir, source='.imwheelrc')

@@ -1,0 +1,7 @@
+"Tilda"
+,Thumb1,twosuperior
+,Thumb2,twosuperior
+
+".*"
+,Thumb1,Alt_L|F4
+,Thumb2,Control_L|Alt_L|KP_0
