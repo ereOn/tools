@@ -4,4 +4,8 @@ home_dir = os.path.expanduser('~')
 
 env = Environment()
 
-env.Install(target=home_dir, source='.imwheelrc')
+install = env.Install(target=home_dir, source='.imwheelrc')
+
+env.Alias('install', install)
+
+env.Default('install')
