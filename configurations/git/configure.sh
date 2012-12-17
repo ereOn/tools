@@ -15,6 +15,7 @@ git config --global alias.cl "clean -d -x -f"
 git config --global alias.sub "submodule"
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 git config --global alias.serve "daemon --reuseaddr --verbose --base-path=. --export-all ./.git"
+git config --global alias.fixup "rebase --autosquash -i"
 
 # Colors
 git config --global color.ui auto
