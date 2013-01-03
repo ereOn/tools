@@ -15,7 +15,7 @@ git config --global alias.cl "clean -d -x -f"
 git config --global alias.sub "submodule"
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 git config --global alias.serve "daemon --reuseaddr --verbose --base-path=. --export-all ./.git"
-git config --global alias.fixup "rebase --autosquash -i"
+git config --global alias.fix "commit --amend"
 git config --global alias.fshow "!sh -c 'git show --pretty=\"format:\" --name-only $1 | grep -v \"^$\" | uniq | sed -e \"s#^#`git rev-parse --show-toplevel`/#\"' -"
 git config --global alias.fvim "!sh -c 'vim -p `git fshow $1`' -"
 git config --global alias.fgvim "!sh -c 'gvim -p `git fshow $1`' -"
@@ -28,6 +28,9 @@ git config --global diff.tool gvimdiff
 
 # Core
 git config --global core.excludesfile "${HOME}/.gitignore_global"
+
+# Rebasing
+git config --global rebase.autosquash true
 
 # Instaweb
 git config --global instaweb.httpd webrick
