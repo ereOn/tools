@@ -19,6 +19,7 @@ git config --global alias.fix "commit --amend"
 git config --global alias.fshow "!sh -c 'git show --pretty=\"format:\" --name-only \$1 | grep -v \"^\$\" | uniq | sed -e \"s#^#\`git rev-parse --show-toplevel\`/#\"' -"
 git config --global alias.fvim "!sh -c 'vim -p \`git fshow \$1\`' -"
 git config --global alias.fgvim "!sh -c 'gvim -p \`git fshow \$1\`' -"
+git config --global alias.df "diff --summary --stat"
 
 # Colors
 git config --global color.ui auto
