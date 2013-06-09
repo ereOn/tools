@@ -20,6 +20,7 @@ git config --global alias.fshow "!sh -c 'git show --pretty=\"format:\" --name-on
 git config --global alias.fvim "!sh -c 'vim -p \`git fshow \$1\`' -"
 git config --global alias.fgvim "!sh -c 'gvim -p \`git fshow \$1\`' -"
 git config --global alias.df "diff --summary --stat"
+git config --global alias.sync "!git pull && git push"
 
 # Colors
 git config --global color.ui auto
