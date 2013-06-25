@@ -6,6 +6,8 @@
 git config --global user.name "Julien Kauffmann"
 git config --global user.email "julien.kauffmann@freelan.org"
 
+# Push
+git config --global push.default "upstream"
 # Aliases
 git config --global alias.st "status"
 git config --global alias.ci "commit"
